@@ -66,7 +66,6 @@ class Profile extends React.Component {
   }
 
   getUser() {
-    console.log("hi")
     var that = this;
     var user = this.props.username
     $.ajax({

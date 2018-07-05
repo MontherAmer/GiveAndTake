@@ -9,7 +9,6 @@ class Create extends React.Component {
   }
 
   render() {
-    console.log('hello from create', this.props)
     return (
       <div className ='row'>
         <div className="col-md-3"></div> 

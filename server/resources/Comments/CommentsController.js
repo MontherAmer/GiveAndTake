@@ -47,6 +47,5 @@ exports.retrieve= function(req, res){
 			return handleError(err)
 		}
 		res.send(data)
-		console.log(data)
 	})
 }
