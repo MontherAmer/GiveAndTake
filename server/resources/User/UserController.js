@@ -3,7 +3,7 @@ var Items = require('../Items/Items');
 var Messages = require('../Messages/Messages');
 
 exports.create = function (req, res) {
-	var user = new Users(req.body);
+    var user = new Users(req.body);
 	user.save(function (err, user) {
 	    if (err) {
 	    	return console.error(err);	
@@ -91,8 +91,6 @@ exports.sendMessage = function (req, res) {
 			console.log(err);
 		}
 	});
-	console.log(req.body);
-	console.log(message);
 	Users.findOne({username : req.session.username}).exec(function (err, user) {	
 		user.messages.push(message._id)
 		user.save(function (err, updatedUser) {

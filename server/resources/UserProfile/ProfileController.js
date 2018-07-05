@@ -18,7 +18,6 @@ exports.updateUser = function (req, res) {
 		lastName: req.body.lastName,
 		about: req.body.about
 	}
-	//console.log('update user func ',req.params.username)
 	Users.findOneAndUpdate({username:req.session.username},updateuser,function(err,data){
 		if(err){
 			res.json('err');
@@ -32,10 +31,6 @@ exports.updateUser = function (req, res) {
 			 	res.json(data);
 			 }
 	      })
-			// res.json(data);
-
 		}
-	      // res.json(data);
-	      
 	})
 }

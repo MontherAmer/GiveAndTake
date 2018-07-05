@@ -40,12 +40,10 @@ class ShowItem extends React.Component {
 
   getItem(){
     var that=this;
-    console.log(this.state.value)
     $.ajax({
       type:'GET',
       url:'/item',
       success:function(data){
-        console.log(data)
         var x=[];
         for(var i=0;i<data.length;i++){
           if(data[i].name===that.state.value){
@@ -54,7 +52,6 @@ class ShowItem extends React.Component {
          
         }
          that.setState({sItem:x})
-          console.log('sItem= ', that.state.sItem)
       }
     })
   }
@@ -79,7 +76,6 @@ class ShowItem extends React.Component {
         return(
           <div>
             <ItemDisplay id={y._id} username={y.username} />
-            {console.log('y= ',y)}
           </div>  
         )
       }

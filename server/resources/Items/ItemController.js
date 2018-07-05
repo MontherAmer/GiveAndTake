@@ -2,7 +2,6 @@ var Items = require('./Items');
 var Users = require('../User/Users');
 
 exports.createItem = function (req, res) {
-	console.log("req,body",req.body);
 	var item= new Items({
 		username:req.session.username,
 		name: req.body.name,
@@ -84,7 +83,6 @@ exports.retrieve= function(req, res){
 			return handleError(err)
 		}
 		res.send(data)
-		console.log(data)
 	})
 }
 

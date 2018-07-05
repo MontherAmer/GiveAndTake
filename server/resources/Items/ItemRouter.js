@@ -15,7 +15,7 @@ ItemRouter.route('/')
 	.delete(function (req, res) {
 		ItemController.deleteItem(req, res); // deleteItem
 	})
-	ItemRouter.route('/home')
+ItemRouter.route('/home')
 	.get(function (req, res) {
 		ItemController.limitedItem(req, res);
 	})
