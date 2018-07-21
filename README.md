@@ -39,4 +39,5 @@ Team (Medusa):
 -Development Team Members: @ Afaq smadi  ,@ Abdallah Alramahi  
 
 GitHub Link:
-https://github.com/Greenfield-project-Medusa/GiveAndTake
+
+- https://github.com/Greenfield-project-Medusa/GiveAndTake
